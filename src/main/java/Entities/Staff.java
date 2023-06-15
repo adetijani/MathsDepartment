@@ -8,15 +8,14 @@ import java.util.ArrayList;
 public class Staff extends Person{
     private String Department;
     private String EmploymentStatus;
-    private Roles role;
+
 
     public String Roles;
 
-    public Staff(String name, String email, String address, String phoneNumber, String department, String employmentStatus, Roles role) {
+    public Staff(String name, String email, String address, String phoneNumber, String department, String employmentStatus) {
         super(name, email, address, phoneNumber);
         Department = department;
         EmploymentStatus = employmentStatus;
-        this.role = role;
     }
 
     public String getDepartment() {
@@ -24,9 +23,9 @@ public class Staff extends Person{
                 Department;
     }
 
-    public void setDepartment(String department) {
-
-        Department = department;
+    public String setDepartment(){
+        return
+                Department;
     }
 
     public String getEmploymentStatus() {
@@ -39,14 +38,5 @@ public class Staff extends Person{
         EmploymentStatus = employmentStatus;
     }
 
-    public Roles getRole()
-    {
-        return role;
-    }
-
-    public void setRole(Roles role) {
-
-        this.role = role;
-    }
 
 }

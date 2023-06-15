@@ -23,4 +23,5 @@ public class School {
     public void setStudentList(ArrayList<Students> studentList) {
         StudentList = studentList;
     }
-    }
+
+}

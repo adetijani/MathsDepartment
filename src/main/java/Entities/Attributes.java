@@ -7,6 +7,6 @@ public class Attributes extends Staff{
 
     }
     public Attributes(String name, String email, String address, String phoneNumber, String department, String employmentStatus, Roles role) {
-        super(name, email, address, phoneNumber, department, employmentStatus, role);
+        super(name, email, address, phoneNumber, department, employmentStatus);
     }
 }

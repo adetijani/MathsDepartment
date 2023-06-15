@@ -9,9 +9,10 @@ public class Students  extends Person {
 
 
     public Students(){}
-    public Students(String name, String email, String address, String phoneNumber, int age) {
+    public Students(String name, String email, String address, String phoneNumber, int age, double behaviouralRatings) {
         super(name, email, address, phoneNumber);
         this.age = age;
+        this.behaviouralRatings = behaviouralRatings;
     }
 
     public int getAge() {

@@ -8,27 +8,23 @@ class StaffTest {
 
     @Test
     void getDepartment() {
-        Staff staff = new Staff("bola","bola@gmail.com","abuja","88888","math","employed","");
+        Staff staff = new Staff("bola","bola@gmail.com","abuja","88888","math","employed");
         assertEquals("math",staff.getDepartment());
     }
 
-//    @Test
-//    void setDepartment() {
-//    }
-//
-//    @Test
-//    void getEmploymentStatus() {
-//    }
-//
-//    @Test
-//    void setEmploymentStatus() {
-//    }
-//
-//    @Test
-//    void getRole() {
-//    }
-//
-//    @Test
-//    void setRole() {
-//    }
+
+    @Test
+    void getEmploymentStatus() {
+        Staff staff = new Staff("bola","bola@gmail.com","abuja","88888","math","employed");
+        assertEquals("employed",staff.getEmploymentStatus());
+
+    }
+
+    @Test
+    void setEmploymentStatus() {
+        Staff staff = new Staff("bola","bola@gmail.com","abuja","88888","math","employed");
+        staff.setEmploymentStatus("notemployed");
+        assertEquals("notemployed",staff.getEmploymentStatus());
+    }
+
 }

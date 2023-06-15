@@ -59,9 +59,4 @@ class PersonTest {
         assertEquals("99999",person.getPhoneNumber());
     }
 
-//    @Test
-//    void testToString() {
-//        Person person = new Person("ade","ade@gmail.com","lagos","88888");
-//
-//    }
 }
